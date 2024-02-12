@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Merriweather&family=Outfit&family=Poppins:wght@400;600&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins";
+  font-size: 16px;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  max-width: 1440px;
+  margin: auto;
+  padding: 30px 5%;
+  align-items: center;
+  color: #475c46;
+  font-size: 1.2rem;
+  font-family: "Poppins";
+}
+.icon span {
+  text-transform: uppercase;
+}
+.navlink ul li {
+  display: inline-block;
+  margin-right: 20px;
+  font-family: "Roboto";
+}
+nav .navlink {
+  margin-left: auto;
+}
+.navlink .fas {
+  display: none;
+}
+
+.section1 {
+  display: flex;
+  max-width: 1440px;
+  padding: 30px 5%;
+  justify-content: center;
+}
+.section1leftcard {
+  width: 50%;
+}
+.section1leftcard h1 {
+  text-transform: capitalize;
+  font-size: 3rem;
+  color: #085c11e8;
+  font-family: "Merriweather";
+}
+.section1leftcard p {
+  font-size: 1rem;
+  margin: 10px 0 10px 0;
+}
+.section1leftcard .rent {
+  width: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #0d4512;
+  border: none;
+  color: white;
+  margin-right: 20px;
+  font-family: "Outfit";
+}
+.section1leftcard .rentyourplace {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: white;
+  border: 1px solid #0d4512;
+  color: #0d4512;
+  margin-right: 20px;
+  font-family: "Outfit";
+  font-weight: bold;
+}
+.section1rightcard img {
+  width: 400px;
+  margin-top: -50px;
+}
+.section1rightcard {
+  display: flex;
+  justify-content: center;
+}
+.section2 {
+  display: flex;
+  max-width: 1440px;
+  margin: auto;
+  padding: 30px 5%;
+  justify-content: center;
+  gap: 50px;
+  font-size: 1.2rem;
+}
+.secion2image {
+  display: flex;
+}
+.section2image img {
+  background: #0d451236;
+  border-radius: 30px;
+  width: 380px;
+}
+.section2text {
+  width: 50%;
+}
+.section2text h1 {
+  font-family: "Merriweather";
+  color: #085c11e8;
+  font-size: 2rem;
+}
+.section2text p {
+  margin: 20px 0 20px;
+}
+.section2 button {
+  width: 100px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #0d4512;
+  border: none;
+  color: white;
+  margin-top: 20px;
+  font-family: "Outfit";
+}
+.section3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 1440px;
+  margin: auto;
+  padding: 30px 5%;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.section3 h1 {
+  font-family: "Merriweather";
+  color: #085c11e8;
+  font-size: 2rem;
+}
+.section3 .container {
+  display: flex;
+  margin-top: 40px;
+  gap: 20px;
+}
+.section3 h1 {
+  font-family: "Merriweather";
+  font-size: 2rem;
+}
+.responsive {
+  background: #0d4512e5;
+  padding: 20px;
+  height: 300px;
+  border-radius: 20px;
+  color: white;
+}
+.responsive h2 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.5rem;
+}
+.section3 .fas {
+  font-size: 3rem;
+  padding: 20px;
+  /* margin-top: 20px; */
+  color: white;
+}
+.section4 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 1440px;
+  margin: auto;
+  padding: 30px 5%;
+}
+.section4 h1 {
+  font-family: "Merriweather";
+  color: #085c11e8;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.section4container {
+  display: flex;
+  gap: 30px;
+}
+.section4card {
+  border: 5px solid #26582a;
+  border-radius: 20px 100px 20px 100px;
+  padding: 30px;
+  margin-top: 40px;
+}
+.section4card h2 {
+  color: #26582ae0;
+}
+.image {
+  padding: 20px;
+}
+.image img {
+  background: #26582a33;
+  width: 150px;
+  border-radius: 50%;
+  padding-top: 10px;
+  height: 150px;
+}
+footer {
+  max-width: 1440px;
+  margin: auto;
+  padding: 30px 5%;
+}
+.footercontainer {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+.footer1 span {
+  text-transform: uppercase;
+  color: #0d4512;
+}
+.footer1 p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.footercontainer .footer2 {
+  text-align: center;
+}
+.footercontainer .footer2 li {
+  list-style: none;
+  line-height: 2;
+}
+.footercontainer .footer2 h3 {
+  color: #26582a;
+  margin-bottom: 10px;
+}
+.footnote {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 1rem;
+  align-items: center;
+}
+.socials .fab {
+  font-size: 16px;
+}
+.fa-facebook {
+  background: #0d4512;
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  margin-right: 5px;
+}
+.fa-instagram,
+.fa-twitter,
+.fa-youtube {
+  background: #26582a33;
+  padding: 10px;
+  border-radius: 50%;
+  margin-left: 5px;
+  /* color: #2ec23a33; */
+}
+@media (max-width: 1440px) {
+  body {
+    font-size: 14px;
+    /* padding-bottom: 400px; */
+  }
+  .bodyunscroll {
+    overflow: hidden;
+  }
+  nav .navlink {
+    display: block;
+    position: fixed;
+    top: 0;
+    background-color: #0d4512;
+    color: white;
+    right: -100%;
+    height: 100%;
+    width: 40%;
+    padding-top: 30%;
+    z-index: 999;
+    transition: right 0.5s ease;
+  }
+  nav ul li {
+    display: block;
+    flex-direction: column;
+    /* margin-bottom: 25px; */
+    margin-left: 30px;
+    font-size: 1rem;
+  }
+  nav .navlinkshow {
+    right: 0;
+  }
+  .fa-bars {
+    display: block;
+    margin-left: auto;
+  }
+  .fa-xmark {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 2rem;
+    color: white;
+  }
+  .navlink .fas {
+    display: block;
+  }
+  .section1 {
+    flex-direction: column;
+  }
+  .section1leftcard h1 {
+    font-size: 2rem;
+  }
+  .section1leftcard {
+    width: 100%;
+  }
+  .section1rightcard img {
+    width: 300px;
+    margin-top: 0px;
+  }
+  .section2 {
+    flex-direction: column;
+  }
+  .section2text {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .section2image img {
+    width: 340px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .section4container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footercontainer {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .social .fab {
+    font-size: 0.9rem;
+  }
+  .footnote {
+    margin-top: 50px;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    gap: 20px;
+  }
+}
