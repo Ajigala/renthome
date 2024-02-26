@@ -9,18 +9,33 @@ body {
   font-size: 16px;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: #0d4512;
+}
 nav {
   display: flex;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: auto;
-  padding: 30px 5%;
+  padding: 30px 10%;
   align-items: center;
   color: #475c46;
   font-size: 1.2rem;
-  font-family: "Poppins";
+  position: fixed;
+  width: 100%;
+  background: white;
 }
 .icon span {
   text-transform: uppercase;
+}
+.icon {
+  display: flex;
+  align-items: center;
+}
+.icon img {
+  color: #0d4512;
+  width: 40px;
+  height: 30px;
 }
 .navlink ul li {
   display: inline-block;
@@ -30,14 +45,14 @@ nav {
 nav .navlink {
   margin-left: auto;
 }
-.navlink .fas {
+nav .fas {
   display: none;
 }
 
 .section1 {
   display: flex;
-  max-width: 1440px;
-  padding: 30px 5%;
+  /* max-width: 1440px; */
+  padding: 10% 5% 0;
   justify-content: center;
 }
 .section1leftcard {
@@ -85,7 +100,7 @@ nav .navlink {
   display: flex;
   max-width: 1440px;
   margin: auto;
-  padding: 30px 5%;
+  padding: 90px 5%;
   justify-content: center;
   gap: 50px;
   font-size: 1.2rem;
@@ -125,7 +140,7 @@ nav .navlink {
   text-align: center;
   max-width: 1440px;
   margin: auto;
-  padding: 30px 5%;
+  padding: 50px 5%;
   justify-content: center;
   font-size: 1.2rem;
 }
@@ -138,6 +153,9 @@ nav .navlink {
   display: flex;
   margin-top: 40px;
   gap: 20px;
+  justify-content: center;
+  padding: 0 5%;
+  /* flex-wrap: wrap; */
 }
 .section3 h1 {
   font-family: "Merriweather";
@@ -146,6 +164,7 @@ nav .navlink {
 .responsive {
   background: #0d4512e5;
   padding: 20px;
+  width: 300px;
   height: 300px;
   border-radius: 20px;
   color: white;
@@ -179,11 +198,14 @@ nav .navlink {
 .section4container {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .section4card {
-  border: 5px solid #26582a;
+  border: 3px solid #26582a;
   border-radius: 20px 100px 20px 100px;
   padding: 30px;
+  width: 300px;
   margin-top: 40px;
 }
 .section4card h2 {
@@ -194,21 +216,22 @@ nav .navlink {
 }
 .image img {
   background: #26582a33;
-  width: 150px;
+  width: 100px;
   border-radius: 50%;
   padding-top: 10px;
-  height: 150px;
+  height: 100px;
 }
 footer {
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: auto;
   padding: 30px 5%;
 }
 .footercontainer {
   display: flex;
   gap: 50px;
-  justify-content: space-between;
+  justify-content: center;
   font-size: 1.2rem;
+  flex-wrap: wrap;
 }
 .footer1 span {
   text-transform: uppercase;
@@ -218,9 +241,12 @@ footer {
   margin-top: 10px;
   font-size: 1.2rem;
 }
-
-.footercontainer .footer2 {
-  text-align: center;
+.footer2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  /* margin-left: auto; */
 }
 .footercontainer .footer2 li {
   list-style: none;
@@ -258,13 +284,16 @@ footer {
   margin-left: 5px;
   /* color: #2ec23a33; */
 }
-@media (max-width: 1440px) {
+@media screen and (max-width: 500px) {
   body {
     font-size: 14px;
     /* padding-bottom: 400px; */
   }
   .bodyunscroll {
     overflow: hidden;
+  }
+  a {
+    color: white;
   }
   nav .navlink {
     display: block;
@@ -278,6 +307,12 @@ footer {
     padding-top: 30%;
     z-index: 999;
     transition: right 0.5s ease;
+  }
+  nav {
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    padding: 20px 5%;
   }
   nav ul li {
     display: block;
@@ -300,10 +335,11 @@ footer {
     font-size: 2rem;
     color: white;
   }
-  .navlink .fas {
+  nav .fas {
     display: block;
   }
   .section1 {
+    padding-top: 21%;
     flex-direction: column;
   }
   .section1leftcard h1 {
@@ -332,6 +368,7 @@ footer {
   .section4container {
     flex-direction: column;
     gap: 10px;
+    justify-content: center;
   }
   .footercontainer {
     flex-direction: column;
