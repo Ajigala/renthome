@@ -8,6 +8,7 @@ body {
   font-family: "Poppins";
   font-size: 16px;
   box-sizing: border-box;
+  max-width: 2340px;
 }
 a {
   text-decoration: none;
@@ -15,7 +16,6 @@ a {
 }
 nav {
   display: flex;
-  /* max-width: 1440px; */
   margin: auto;
   padding: 30px 10%;
   align-items: center;
@@ -23,7 +23,7 @@ nav {
   font-size: 1.2rem;
   position: fixed;
   width: 100%;
-  background: white;
+  backdrop-filter: blur(5px);
 }
 .icon span {
   text-transform: uppercase;
@@ -41,6 +41,7 @@ nav {
   display: inline-block;
   margin-right: 20px;
   font-family: "Roboto";
+  backdrop-filter: none;
 }
 nav .navlink {
   margin-left: auto;
@@ -143,6 +144,7 @@ nav .fas {
   padding: 50px 5%;
   justify-content: center;
   font-size: 1.2rem;
+  animation: float 3s;
 }
 .section3 h1 {
   font-family: "Merriweather";
@@ -310,6 +312,7 @@ footer {
   }
   nav {
     position: fixed;
+    backdrop-filter: none;
     width: 100%;
     background: transparent;
     padding: 20px 5%;
@@ -317,9 +320,9 @@ footer {
   nav ul li {
     display: block;
     flex-direction: column;
-    /* margin-bottom: 25px; */
     margin-left: 30px;
     font-size: 1rem;
+    backdrop-filter: none;
   }
   nav .navlinkshow {
     right: 0;
@@ -354,6 +357,7 @@ footer {
   }
   .section2 {
     flex-direction: column;
+    align-items: center;
   }
   .section2text {
     width: 100%;
@@ -368,6 +372,7 @@ footer {
   .section4container {
     flex-direction: column;
     gap: 10px;
+    align-items: center;
     justify-content: center;
   }
   .footercontainer {
