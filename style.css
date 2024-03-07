@@ -8,7 +8,7 @@ body {
   font-family: "Poppins";
   font-size: 16px;
   box-sizing: border-box;
-  max-width: 2340px;
+  /* max-width: 2340px; */
 }
 a {
   text-decoration: none;
@@ -17,7 +17,7 @@ a {
 nav {
   display: flex;
   margin: auto;
-  padding: 30px 10%;
+  padding: 10px 10%;
   align-items: center;
   color: #475c46;
   font-size: 1.2rem;
@@ -52,7 +52,6 @@ nav .fas {
 
 .section1 {
   display: flex;
-  /* max-width: 1440px; */
   padding: 10% 5% 0;
   justify-content: center;
 }
@@ -112,6 +111,7 @@ nav .fas {
 .section2image img {
   background: #0d451236;
   border-radius: 30px;
+  margin-top: 50px;
   width: 380px;
 }
 .section2text {
@@ -179,7 +179,6 @@ nav .fas {
 .section3 .fas {
   font-size: 3rem;
   padding: 20px;
-  /* margin-top: 20px; */
   color: white;
 }
 .section4 {
@@ -200,7 +199,6 @@ nav .fas {
 .section4container {
   display: flex;
   gap: 30px;
-  flex-wrap: wrap;
   justify-content: center;
 }
 .section4card {
@@ -213,9 +211,7 @@ nav .fas {
 .section4card h2 {
   color: #26582ae0;
 }
-.image {
-  padding: 20px;
-}
+
 .image img {
   background: #26582a33;
   width: 100px;
@@ -224,7 +220,6 @@ nav .fas {
   height: 100px;
 }
 footer {
-  /* max-width: 1440px; */
   margin: auto;
   padding: 30px 5%;
 }
@@ -246,7 +241,7 @@ footer {
 .footer2 {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 50px;
   justify-content: center;
   /* margin-left: auto; */
 }
