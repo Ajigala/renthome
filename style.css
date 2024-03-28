@@ -8,7 +8,6 @@ body {
   font-family: "Poppins";
   font-size: 16px;
   box-sizing: border-box;
-  /* max-width: 2340px; */
 }
 a {
   text-decoration: none;
@@ -23,7 +22,7 @@ nav {
   font-size: 1.2rem;
   position: fixed;
   width: 100%;
-  backdrop-filter: blur(5px);
+  background-color: white;
 }
 .icon span {
   text-transform: uppercase;
@@ -186,7 +185,7 @@ nav .fas {
   flex-direction: column;
   text-align: center;
   max-width: 1440px;
-  margin: auto;
+  margin: 50px auto;
   padding: 30px 5%;
 }
 .section4 h1 {
@@ -194,6 +193,7 @@ nav .fas {
   color: #085c11e8;
   font-size: 2rem;
   letter-spacing: 2px;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 .section4container {
@@ -280,6 +280,25 @@ footer {
   border-radius: 50%;
   margin-left: 5px;
   /* color: #2ec23a33; */
+}
+.loader {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #474bff 94%, #0000) top/9px 9px
+      no-repeat,
+    conic-gradient(#0000 30%, #474bff);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+  animation: spinner-c7wet2 1s infinite linear;
+}
+.loaded .loader {
+  display: none;
+}
+
+@keyframes spinner-c7wet2 {
+  100% {
+    transform: rotate(1turn);
+  }
 }
 @media screen and (max-width: 500px) {
   body {

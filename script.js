@@ -18,3 +18,12 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
 });
+document.addEventListener("DOMContentLoaded", function (event) {
+  // Hide loader when content is fully loaded
+  document.body.classList.add("loaded");
+});
+
+// Show loader when network activity is detected
+window.addEventListener("load", function (event) {
+  document.getElementById("spinner").style.display = "none";
+});
