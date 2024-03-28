@@ -279,7 +279,6 @@ footer {
   padding: 10px;
   border-radius: 50%;
   margin-left: 5px;
-  /* color: #2ec23a33; */
 }
 .loader {
   width: 56px;
@@ -288,7 +287,6 @@ footer {
   background: radial-gradient(farthest-side, #474bff 94%, #0000) top/9px 9px
       no-repeat,
     conic-gradient(#0000 30%, #474bff);
-  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
   animation: spinner-c7wet2 1s infinite linear;
 }
 .loaded .loader {
@@ -328,7 +326,6 @@ footer {
     position: fixed;
     backdrop-filter: none;
     width: 100%;
-    background: transparent;
     padding: 20px 5%;
   }
   nav ul li {
